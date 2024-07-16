@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminMainPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#483c30" height="189.0" stroke="TRANSPARENT" strokeType="INSIDE" width="830.0" />
+      <Text fill="WHITE" layoutX="42.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sukhothai Hotel">
+         <font>
+            <Font name="CordiaUPC" size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="304.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="989 Bayview Avenue, Toronto, ON" wrappingWidth="242.606201171875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="304.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel: 647-898-9988" wrappingWidth="242.606201171875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Separator layoutX="7.0" layoutY="131.0" prefHeight="0.0" prefWidth="818.0" />
+      <Text fill="WHITE" layoutX="142.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="12.206192016601562">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="143.0" prefHeight="18.0" prefWidth="830.0" text="Reservation System for Admin Only" textFill="WHITE">
+         <font>
+            <Font name="CordiaUPC" size="29.0" />
+         </font>
+      </Label>
+      <VBox layoutX="142.0" layoutY="263.0" prefHeight="383.0" prefWidth="507.0" spacing="25.0">
+         <children>
+            <Button fx:id="bookRoomBtn" mnemonicParsing="false" onAction="#bookRoomBtnClick" prefHeight="51.0" prefWidth="507.0" stylesheets="@../cssStyle/button.css" text="Book a Room" textFill="#483c30">
+               <font>
+                  <Font name="Cordia New" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="billBtn" mnemonicParsing="false" onAction="#billBtnClick" prefHeight="50.0" prefWidth="510.0" stylesheets="@../cssStyle/button.css" text="Bill Service" textFill="#483c30">
+               <font>
+                  <Font name="CordiaUPC" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="currentBookingBtn" mnemonicParsing="false" onAction="#currentBookingBtnClick" prefHeight="50.0" prefWidth="515.0" stylesheets="@../cssStyle/button.css" text="Current Bookings" textFill="#483c30">
+               <font>
+                  <Font name="CordiaUPC" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="availableRoomBtn" mnemonicParsing="false" onAction="#availableRoomBtnClick" prefHeight="50.0" prefWidth="510.0" stylesheets="@../cssStyle/button.css" text="Available Rooms" textFill="#483c30">
+               <font>
+                  <Font name="Cordia New" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOutbtn" mnemonicParsing="false" onAction="#logoutBtnClick" prefHeight="50.0" prefWidth="510.0" stylesheets="@../cssStyle/button.css" text="Log out" textFill="#483c30">
+               <font>
+                  <Font name="Cordia New" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

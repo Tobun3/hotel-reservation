@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BillServiceViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#483c30" height="189.0" stroke="TRANSPARENT" strokeType="INSIDE" width="830.0" />
+      <Text fill="WHITE" layoutX="45.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sukhothai Hotel">
+         <font>
+            <Font name="CordiaUPC" size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="304.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="989 Bayview Avenue, Toronto, ON" wrappingWidth="242.606201171875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="304.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel: 647-898-9988" wrappingWidth="242.606201171875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Separator layoutX="7.0" layoutY="131.0" prefHeight="0.0" prefWidth="818.0" />
+      <Text fill="WHITE" layoutX="142.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="12.206192016601562">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="143.0" prefHeight="18.0" prefWidth="830.0" text="Bill Service for Admin Only" textFill="WHITE">
+         <font>
+            <Font name="CordiaUPC" size="29.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="104.0" layoutY="219.0" prefHeight="131.0" prefWidth="635.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.60003662109375" minWidth="10.0" prefWidth="195.60003662109375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.39996337890625" minWidth="10.0" prefWidth="440.39996337890625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="830.0" text="Guest Name :" textFill="#483c30" GridPane.rowIndex="1">
+               <font>
+                  <Font name="CordiaUPC" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="830.0" text="Booking ID :" textFill="#483c30">
+               <font>
+                  <Font name="CordiaUPC" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="830.0" text="Number of Room Booked :" textFill="#483c30" GridPane.rowIndex="3">
+               <font>
+                  <Font name="CordiaUPC" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bookingIdTxt" GridPane.columnIndex="1" />
+            <TextField fx:id="nameTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="numRoomTxt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="830.0" text="Duration: " textFill="#483c30" GridPane.rowIndex="2">
+               <font>
+                  <Font name="CordiaUPC" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="durationTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="98.0" layoutY="600.0" prefHeight="68.0" prefWidth="635.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.60003662109375" minWidth="10.0" prefWidth="195.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.39996337890625" minWidth="10.0" prefWidth="440.39996337890625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+         </rowConstraints>
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="830.0" text="Total Amount :" textFill="#483c30" GridPane.rowIndex="2">
+               <font>
+                  <Font name="CordiaUPC" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="830.0" text="Discounts (%):" textFill="#483c30">
+               <font>
+                  <Font name="CordiaUPC" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox prefHeight="30.0" prefWidth="440.0" spacing="25.0" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="discountTxt" prefHeight="26.0" prefWidth="317.0" />
+                  <Button fx:id="applyDiscountBtn" mnemonicParsing="false" onAction="#applyDiscountClick" prefHeight="26.0" prefWidth="114.0" text="Apply Discount" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <Button fx:id="payBtn" layoutX="627.0" layoutY="679.0" mnemonicParsing="false" onAction="#payBtnClick" text="Process Payment" />
+      <Button fx:id="backBtn" layoutX="99.0" layoutY="684.0" mnemonicParsing="false" onAction="#backBtnClick" prefHeight="26.0" prefWidth="133.0" text="Back to Main Menu" />
+      <TableView fx:id="roomTable" layoutX="98.0" layoutY="417.0" prefHeight="164.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="162.4000473022461" text="Room ID" />
+          <TableColumn fx:id="typeColumn" prefWidth="287.9999694824219" text="Room Type" />
+            <TableColumn fx:id="priceColumn" prefWidth="195.99993896484375" text="Price / Night" />
+        </columns>
+      </TableView>
+      <Label alignment="TOP_LEFT" layoutX="98.0" layoutY="379.0" prefHeight="30.0" prefWidth="206.0" text="Room Booked :" textFill="#483c30">
+         <font>
+            <Font name="CordiaUPC" size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="settleTxt" fill="#1bbf13" layoutX="260.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This bill has been settled already!">
+         <font>
+            <Font name="Cordia New" size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="bookingMenuBtn" layoutX="262.0" layoutY="684.0" mnemonicParsing="false" onAction="#bookingMenuClick" prefHeight="26.0" prefWidth="141.0" text="Back to Booking Menu" />
+   </children>
+</AnchorPane>

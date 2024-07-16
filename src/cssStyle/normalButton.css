@@ -1,0 +1,26 @@
+.button {
+    -fx-background-color: #fff;
+    -fx-border-radius: 0.375rem;
+    -fx-border-color: #212121;
+    -fx-border-width: 0.125rem;
+    -fx-text-fill: #212121;
+    -fx-cursor: hand;
+    -fx-font-family: "Helvetica", sans-serif;
+    -fx-font-size: 1.125rem;
+    -fx-font-weight: bold;
+    -fx-padding: 0.875rem 1.125rem;
+    -fx-alignment: center;
+}
+
+.button :hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button :pressed {
+    -fx-translate-y: 0.125rem;
+}
+
+.button :focused {
+    -fx-border-color: transparent;
+}
